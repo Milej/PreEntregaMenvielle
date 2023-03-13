@@ -1,0 +1,269 @@
+/* TODO EL DOCUMENTO */
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* BODY */
+body{
+  /* background-color: rgb(233, 233, 233); */
+}
+
+/* CONTENEDOR DE LA BARRA DE NAVEGACION */
+.nav-bar{
+  background-color: #ff6858;
+  max-width: 100%;
+  padding: 0 24px;
+}
+
+/* ANCHOR DEL LOGO */
+.logo{
+  text-decoration: none;
+}
+
+/* IMAGEN DEL LOGO */
+.logo img{
+  margin: 8px;
+  width: 40px;
+  height: 40px;
+}
+
+/* TEXTO DEL LOGO */
+.logo span{
+  position: relative;
+  color: #FFF;
+  font-size: 40px;
+  font-weight: bold;
+  top: -10px;
+}
+
+/* CONTENEDOR DE NAVEGACION */
+.nav-link-container{
+  position: relative;
+  display: inline-block;
+  top: -16px;
+  left: 35%;
+}
+
+/* ITEM DE LA NAVEGACION */
+.nav-item{
+  display: inline-block;
+}
+
+/* ANCHOR DE LA NAVEGACION */
+.nav-link{
+  color: #FFF;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 0 12px;
+}
+  .nav-link.active{
+    border-bottom: 2px solid #FFF;
+  }
+    .nav-link:hover{
+      border-bottom: 2px solid #FFF;
+    }
+
+/* SECCION PRINCIPAL */
+.main-section{
+  height: 95vh;
+  background-image: url('./../img/background.jpg');
+  background-position: center center;
+  background-size: cover;
+}
+
+/* TITULO DE LA SECCION PRINCIPAL */
+.main-section .section-text h1{
+  position: absolute;
+  font-size: 72px;
+  color: #FFF;
+  text-shadow: 5px 5px 5px black;
+  z-index: 999;
+  top: 35%;
+  left: 22%;
+}
+
+/* EFECTO DE OSCURIDAD A IMAGEN SECCION PRINCIPAL */
+.main-section .bg-black{
+  position: relative;
+  background-color: rgba(0, 0, 0, .3);
+  height: 95vh;
+}
+
+  
+/* BOTON DE ACCION PARA LA SECCION MAIN */
+.main-section .btn-action{
+  position: absolute;
+  z-index: 999;
+  top: 80%;
+  left: 45%;
+}
+
+.btn{
+  font-size: 20px;
+  font-weight: bold;
+  border: 1px solid black;
+  color: white;
+  text-decoration: none;
+  padding: 16px 24px;
+  box-shadow: 0px 5px 10px black;
+  cursor: pointer;
+}
+
+.btn-submit{
+  background-color: #2f9f02;
+  padding: 16px 48px;
+}
+  
+/* BOTON DE ACCION */
+.btn-action{
+  background-color: #2f9f02;
+  border-radius: 24px 0;
+}
+
+/* SECCION DE MEGA OFERTAS */
+.offers-section, .list-section{
+  padding: 48px 32px;
+  max-width: 100%;
+  margin: 0 48px;
+  text-align: center;
+}
+
+.offers-section h2{
+  text-align: center;
+  border-bottom: 2px solid black;
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.product-container{
+  padding: 48px 12px;
+}
+
+.product-card{
+  width: 400px;
+  display: inline-block;
+}
+  .product-card .product-name{
+    font-weight: bold;
+  }
+  .product-card .product-price{
+    color: #e61610;
+    font-weight: bold;
+    font-size: 24px;
+  }
+
+.product-card span{
+  display: block;
+}
+
+/* FOOTER */
+.contact-bottom-section{
+  background-color: #e6e6e6;
+  padding: 34px;
+  max-width: 100%;
+  margin-top: 48px;
+}
+
+.contact-bottom-section div{
+  display: inline-block;
+  margin-left: 320px;
+}
+
+.contact-bottom-section div span{
+  font-weight: bold;
+}
+
+.footer-section{
+  background-color: black;
+  padding: 12px;
+}
+
+.footer-section p{
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
+
+/* PAGINA CONTACTO */
+.form-section{
+  text-align: center;
+}
+
+.form-section h2, .main-content h2, .list-section h2{
+  padding: 32px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 48px;
+}
+
+form{
+  display: inline-block;
+  max-width: 100%;
+}
+
+.form-group{
+  width: 35%;
+  display: inline-block;
+  margin: 16px 24px;
+  text-align: left;
+}
+
+.app-input{
+  width: 100%;
+  margin: 8px 0px;
+  padding: 8px;
+}
+
+textarea{
+  resize: none;
+}
+
+.app-label{
+  font-weight: bold;
+}
+
+.footer-container{
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.main-content{
+  margin: 0px 120px 144px 120px;
+}
+
+.card{
+  width: 300px;
+  height: 300px;
+  display: inline-block;
+  margin: 0px 48px;
+}
+
+.card .card_head{
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+.card .card_head i{
+  padding: 12px 4px;
+  font-size: 24px;
+}
+
+.card .card_head h4{
+  font-weight: bold;
+  font-size: 20px;
+  border-bottom: 1px solid white;
+  padding: 8px;
+}
+
+.card .card_head p{
+  padding: 8px;
+}
+
+.card .card_map iframe{
+  height: 300px !important;
+}
