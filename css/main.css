@@ -69,7 +69,7 @@ body{
 /* SECCION PRINCIPAL */
 .main-section{
   height: 95vh;
-  background-image: url('./../img/background.jpg');
+  background-image: url('./../assets/img/background.jpg');
   background-position: center center;
   background-size: cover;
 }
