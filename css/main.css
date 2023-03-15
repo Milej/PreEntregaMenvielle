@@ -77,7 +77,7 @@
 }
   
 /* BOTON DE ACCION PARA LA SECCION MAIN */
-.main-section .main-section__btn{
+.main-section .main-section__btn, .offers-section .offers-section__btn{
   color: white;
   background-color: #2f9f02;
   font-weight: bold;
@@ -86,20 +86,21 @@
   border-radius: 24px 0;
   padding: 16px;
 }
-  .main-section .main-section__btn:hover{
+  .main-section .main-section__btn:hover, .offers-section .offers-section__btn:hover{
     color: white;
     background-color: #227501;
     font-weight: bold;
     border: 1px solid black;
     border-radius: 24px 0;
-    padding: 16px 24px;
+    padding: 16px;
   }
 
-.btn-submit{
-  background-color: #2f9f02;
-  padding: 16px 48px;
-}
-  
+  .main-section .main-section__btn:active, .offers-section .offers-section__btn:active{
+    color: white !important;
+    background-color: #227501 !important;
+    border: 1px solid black !important;
+  }
+
 
 /* SECCION DE MEGA OFERTAS */
 .offers-section, .list-section{
@@ -109,7 +110,7 @@
   text-align: center;
 }
 
-.offers-section h2{
+.offers-section .offers-section__title{
   text-align: center;
   border-bottom: 2px solid black;
   font-weight: bold;
@@ -120,20 +121,17 @@
   padding: 48px 12px;
 }
 
-.product-card{
-  width: 400px;
-  display: inline-block;
+.product-container__card .product-container__card__name{
+  font-weight: bold;
 }
-  .product-card .product-name{
-    font-weight: bold;
-  }
-  .product-card .product-price{
-    color: #e61610;
-    font-weight: bold;
-    font-size: 24px;
-  }
 
-.product-card span{
+.product-container__card .product-container__card__price{
+  color: #e61610;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.product-container__card span{
   display: block;
 }
 
