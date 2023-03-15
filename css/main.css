@@ -137,18 +137,19 @@
 
 /* FOOTER */
 .contact-bottom-section{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   background-color: #e6e6e6;
   padding: 34px;
   max-width: 100%;
   margin-top: 48px;
 }
 
-.contact-bottom-section div{
-  display: inline-block;
-  margin-left: 320px;
+.contact-bottom-section .contact-bottom-section__item{
+  justify-self: center;
 }
 
-.contact-bottom-section div span{
+.contact-bottom-section .contact-bottom-section__item span{
   font-weight: bold;
 }
 
