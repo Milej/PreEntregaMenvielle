@@ -1,0 +1,37 @@
+@media (max-width: 359px) {
+
+  .main-section{
+    height: 50vh;
+  }
+
+  .main-section .main-section__title{
+    font-size: 1rem;
+  }
+
+  .main-section .main-section__btn{
+    font-size: .75rem;
+    padding: 8px;
+  }
+
+}
+
+@media (min-width: 360px) and (max-width: 767px) {
+
+  .main-section .main-section__title{
+    font-size: 2rem;
+  }
+
+  .main-section .main-section__btn{
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 1366px) {
+
+  .main-section .main-section__title{
+    font-size: 3rem;
+  }
+
+}
