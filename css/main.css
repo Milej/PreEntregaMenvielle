@@ -119,19 +119,29 @@
 
 .product-container{
   padding: 48px 12px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
-.product-container__card .product-container__card__name{
+.product-container.catalogue{
+  gap: 48px;
+}
+
+.product-card .product-card__name{
   font-weight: bold;
 }
 
-.product-container__card .product-container__card__price{
+.product-card .product-card__price{
   color: #e61610;
   font-weight: bold;
   font-size: 28px;
 }
 
-.product-container__card span{
+.product-card .product-card__image{
+  width: 100%;
+}
+
+.product-card span{
   display: block;
 }
 
