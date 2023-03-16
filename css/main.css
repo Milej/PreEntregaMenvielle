@@ -254,3 +254,28 @@ textarea{
   height: 300px !important;
   width: 100%;
 }
+
+.wireframes, .mockups{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+  margin: 24px 0;
+}
+
+.card-app{
+  background-color: #afafaf;
+  padding: 12px;
+  text-align: center;
+}
+
+.card-app .card__title{
+  text-decoration: none;
+  color: #444444;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.card-app .card__title:hover{
+  color: #000;
+  border-bottom: 3px solid black;
+}
