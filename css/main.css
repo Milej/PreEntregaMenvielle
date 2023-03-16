@@ -191,12 +191,6 @@ form{
   max-width: 100%;
 }
 
-.form-group{
-  width: 35%;
-  display: inline-block;
-  margin: 16px 24px;
-  text-align: left;
-}
 
 .app-input{
   width: 100%;
