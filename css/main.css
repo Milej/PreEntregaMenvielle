@@ -212,35 +212,41 @@ textarea{
   margin: 0px 120px 144px 120px;
 }
 
+.card-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
 .card{
-  width: 300px;
-  height: 300px;
+  width: 80%;
   display: inline-block;
   margin: 0px 48px;
 }
 
-.card .card_head{
+.card .card__head{
   text-align: center;
   background-color: black;
   color: white;
 }
 
-.card .card_head i{
+.card .card__head i{
   padding: 12px 4px;
   font-size: 24px;
 }
 
-.card .card_head h4{
+.card .card__head h4{
   font-weight: bold;
   font-size: 20px;
   border-bottom: 1px solid white;
   padding: 8px;
 }
 
-.card .card_head p{
+.card .card__head p{
   padding: 8px;
 }
 
-.card .card_map iframe{
+.card .card__map iframe{
   height: 300px !important;
+  width: 100%;
 }

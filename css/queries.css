@@ -22,6 +22,15 @@
     padding: 16px 0px;
   }
 
+  .card-container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .main-content .main-content__title{
+    font-size: 1.5rem;
+  }
+
 }
 
 @media (min-width: 360px) and (max-width: 767px) {
@@ -43,6 +52,15 @@
   .contact-bottom-section .contact-bottom-section__item{
     padding: 16px 0px;
   }
+
+  .main-content .main-content__title{
+    font-size: 2rem;
+  }
+
+  .card-container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
   
 }
 
@@ -54,6 +72,11 @@
 
   .contact-bottom-section{
     padding: 24px;
+  }
+
+  .card-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 
 }
