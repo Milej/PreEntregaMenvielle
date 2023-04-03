@@ -1,0 +1,62 @@
+// CONTENEDOR DE LA BARRA DE NAVEGACION
+.navbar{
+  background-color: map-get($colors, 'red');
+  padding: 0 24px;
+
+  // ANCHOR DEL LOGO
+  .navbar-brand{
+    text-decoration: none;
+
+    // IMAGEN DEL LOGO
+    &__logo{
+      margin: 8px;
+      width: 40px;
+      height: 40px;
+    }
+
+    // IMAGEN DEL LOGO
+    &__name{
+      color: map-get($colors, 'white');
+      font-weight: map-get($font-weight, 'bold');
+      font-size: map-get($font-sizes, 'lg');
+    }
+
+  }
+}
+
+// ANCHOR DE LA NAVEGACION
+.navbar-nav{
+
+  .nav-link{
+    color: map-get($colors, 'white');
+    text-decoration: none;
+    font-weight: map-get($font-weight, 'bold');
+    letter-spacing: 1px;
+    margin: 0 12px;
+
+    &.active{
+      color: map-get($colors, 'white') !important;
+      border-bottom: 2px solid map-get($colors, 'white');
+    }
+
+    &:hover{
+      color: map-get($colors, 'white');
+      border-bottom: 2px solid map-get($colors, 'white');
+    }
+
+  }
+
+}
+
+.navbar-toggler{
+  border: none !important;
+
+  i{
+    color: #FFF;
+  }
+}
+
+// UBICAMOS LA NAVEGACION AL FINAL
+.navbar-collapse{
+  place-content: end;
+}

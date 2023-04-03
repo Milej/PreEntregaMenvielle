@@ -1,0 +1,57 @@
+.card{
+  display: inline-block;
+  padding: 24px 0;
+  font-weight: map-get($font-weight, bold);
+  text-align: center;
+  border: none !important;
+
+  // SUCURSALES
+  &-head{
+    text-align: center;
+    background-color: black;
+    color: white;
+
+    &__icon{
+      padding: 12px 4px;
+      font-size: 24px;
+    }
+
+    &__title{
+      font-weight: bold;
+      font-size: 20px;
+      border-bottom: 1px solid white;
+      padding: 8px;
+    }
+
+    &__address{
+      padding: 8px;
+    }
+  }
+
+  &-map{
+    
+    & iframe{
+      height: 300px !important;
+      width: 100%;
+    }
+  }
+}
+
+.product-card{
+  @extend .card;
+  
+  &__name{
+    font-size: map-get($font-sizes, md);
+    display: block;
+  }
+
+  &__price{
+    color: map-get($colors, 'red');
+    font-size: map-get($font-sizes, xl);
+    display: block;
+  }
+
+  &__image{
+    width: 100%;
+  }
+}

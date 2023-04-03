@@ -1,0 +1,37 @@
+// PAGINA CONTACTO
+.form-section{
+  text-align: center;
+}
+
+.form-section h2, .list-section h2{
+  padding: 32px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 48px;
+}
+
+form{
+  display: inline-block;
+  max-width: 100%;
+}
+
+
+.app-input{
+  width: 100%;
+  margin: 8px 0px;
+  padding: 8px;
+}
+
+textarea{
+  resize: none;
+}
+
+.app-label{
+  font-weight: bold;
+}
+
+.footer-container{
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}

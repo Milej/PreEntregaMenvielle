@@ -1,0 +1,181 @@
+@media (max-width: 359px) {
+
+
+  // .card-container{
+  //   display: grid;
+  //   grid-template-columns: repeat(1, 1fr);
+  // }
+
+  // .product-container{
+  //   grid-template-columns: repeat(1, 1fr);
+  // }
+
+  // .wireframes, .mockups{
+  //   grid-template-columns: repeat(1, 1fr);
+  // }
+
+}
+
+@media (min-width: 360px) and (max-width: 767px) {
+
+
+  // .contact-bottom-section{
+  //   grid-template-columns: 1fr;
+  //   padding: 8px;
+  // }
+
+  // .contact-bottom-section .contact-bottom-section__item{
+  //   padding: 16px 0px;
+  // }
+
+  // .main-content .main-content__title{
+  //   font-size: 2rem;
+  // }
+
+  // .card-container{
+  //   display: grid;
+  //   grid-template-columns: repeat(1, 1fr);
+  // }
+  
+  // .product-container{
+  //   grid-template-columns: repeat(1, 1fr);
+  // }
+
+  // .wireframes, .mockups{
+  //   grid-template-columns: repeat(2, 1fr);
+  // }
+
+}
+
+@media (min-width: 768px) and (max-width: 1366px) {
+
+  // .contact-bottom-section{
+  //   padding: 24px;
+  // }
+
+  // .card-container{
+  //   display: grid;
+  //   grid-template-columns: repeat(2, 1fr);
+  // }
+
+  // .product-container{
+  //   grid-template-columns: repeat(2, 1fr);
+  // }
+
+  // .wireframes, .mockups{
+  //   grid-template-columns: repeat(4, 1fr);
+  // }
+
+}
+
+// CELU
+@media screen and (max-width: 767px) {
+
+  //INDEX
+  // TITULO DE LA SECCION PRINCIPAL
+  .main-section{
+    gap: 40px;
+    height: 60vh;
+    
+    &__title{
+      font-size: map-get($font-sizes, xl);
+    }
+    
+  }
+
+  .app-button{
+    padding: 8px;
+    font-size: map-get($font-sizes, md);
+  }
+
+  .offers-section{
+    
+    &__title{
+      font-size: map-get($font-sizes, xl);
+    }
+    
+  }
+  
+
+  //FOOTER
+  .footer-contact{
+    grid-template-columns: 1fr;
+    padding: 8px;
+
+    &__item{
+      padding: 16px 0px;
+    }
+  }
+
+  //SUCURSALES
+  .card-container{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .main-content{
+    text-align: center;
+    
+    &__title{
+      @include app-title;
+      font-size: map-get($font-sizes, xl);
+    }
+    
+  }
+  
+}
+
+// TABLET
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+
+  //INDEX
+  // TITULO DE LA SECCION PRINCIPAL
+  .main-section{
+    gap: 40px;
+    height: 60vh;
+    
+    &__title{
+      font-size: map-get($font-sizes, xl);
+    }
+    
+  }
+
+  .app-button{
+    padding: 8px;
+    font-size: map-get($font-sizes, md);
+  }
+
+  .offers-section{
+    
+    &__title{
+      font-size: map-get($font-sizes, xl);
+    }
+    
+  }
+  
+
+  //FOOTER
+  .footer-contact{
+    grid-template-columns: 1fr;
+    padding: 8px;
+
+    &__item{
+      padding: 16px 0px;
+    }
+  }
+
+  //SUCURSALES
+  .card-container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+}
+
+// PC
+@media screen and (min-width: 1024px) {
+
+  //SUCURSALES
+  .card-container{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+}

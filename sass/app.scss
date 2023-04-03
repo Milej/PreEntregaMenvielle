@@ -3,15 +3,14 @@
 @import 'utilities/mixins';
 
 @import 'base/reset';
-@import 'base/typography';
 
 @import 'layout/navigation';
 @import 'layout/grid';
-@import 'layout/header';
 @import 'layout/footer';
 @import 'layout/forms';
 
 @import 'components/buttons';
+@import 'components/cards';
 
 @import 'views/catalogo';
 @import 'views/club-eme';
@@ -19,4 +18,6 @@
 @import 'views/index';
 @import 'views/mockups';
 @import 'views/sucursales';
-@import 'views/wireframe';
+@import 'views/wireframes';
+
+@import 'utilities/queries';

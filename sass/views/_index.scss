@@ -1,0 +1,25 @@
+// TITULO DE LA SECCION PRINCIPAL
+.main-section{
+  place-content: center;
+  gap: 80px;
+  height: 95vh;
+  background-image: url('./../../assets/img/background.jpg');
+  background-position: center center;
+  background-size: cover;
+  
+  &__title{
+    color: map-get($colors, 'white');
+    font-size: map-get($font-sizes, 'xxl');
+    text-shadow: 3px 1px 1px map-get($colors, 'black');
+  }
+  
+}
+
+.offers-section{
+  text-align: center;
+  
+  &__title{
+    @include app-title;
+  }
+  
+}

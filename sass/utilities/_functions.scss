@@ -1,0 +1,43 @@
+// FUNCION PARA CREAR .text-color -> CON DIFERENTES COLORES QUE VIENENE DEL MAPS $colors.
+@each $colorName, $colorCode in $colors{
+
+  .text-#{$colorName}{
+
+    color: $colorCode;
+
+  }
+
+};
+
+// FUNCION PARA CREAR .text-color -> CON DIFERENTES COLORES QUE VIENENE DEL MAPS $colors.
+@each $colorName, $colorCode in $colors{
+
+  .bg-#{$colorName}{
+
+    background-color: $colorCode;
+
+  }
+
+};
+
+// FUNCION PARA CREAR 
+@each $size, $fontSize in $font-sizes{
+
+  .#{$size}{
+
+    font-size: $fontSize;
+
+  }
+
+};
+
+// FUNCION PARA CREAR 
+@each $weight, $fontWeight in $font-weight{
+
+  .font-#{$weight}{
+
+    font-weight: $fontWeight;
+
+  }
+
+};
