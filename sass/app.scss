@@ -7,17 +7,13 @@
 @import 'layout/navigation';
 @import 'layout/grid';
 @import 'layout/footer';
-@import 'layout/forms';
 
 @import 'components/buttons';
+@import 'components/titles';
 @import 'components/cards';
+@import 'components/labels';
+@import 'components/inputs';
 
-@import 'views/catalogo';
-@import 'views/club-eme';
-@import 'views/contacto';
 @import 'views/index';
-@import 'views/mockups';
-@import 'views/sucursales';
-@import 'views/wireframes';
 
 @import 'utilities/queries';

@@ -7,6 +7,7 @@
   color: white;
   display: block;
   margin: 24px 0;
+  transition: all .5s;
 }
 
 .app-button{
@@ -15,6 +16,12 @@
 
   &:hover{
     background-color: $dark-green;
+    @include big(1.2);
   }
 }
 
+.btn-success{
+  background-color: map-get($colors, 'green') !important;
+  border: none !important;
+  padding: 12px 24px !important;
+}

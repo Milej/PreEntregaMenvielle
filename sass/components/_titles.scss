@@ -1,0 +1,7 @@
+.app-title{
+  text-align: center;
+  border-bottom: 2px solid $black;
+  font-weight: map-get($font-weight, bold);
+  font-size: map-get($font-sizes, xxl);
+  padding: 20px 0;
+};

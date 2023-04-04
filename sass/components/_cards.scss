@@ -4,6 +4,7 @@
   font-weight: map-get($font-weight, bold);
   text-align: center;
   border: none !important;
+  transition: all .3s;
 
   // SUCURSALES
   &-head{
@@ -34,6 +35,10 @@
       height: 300px !important;
       width: 100%;
     }
+  }
+
+  &:hover{
+    @include big(1.03);
   }
 }
 

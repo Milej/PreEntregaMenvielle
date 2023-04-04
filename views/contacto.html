@@ -38,7 +38,7 @@
       <!-- BOTON PARA HACER TOGGLE DE NAVBAR -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle Navigation"><i class="fa-solid fa-bars"></i></button>
 
-      <div class="collapse navbar-collapse">
+      <div class="collapse navbar-collapse" id="navbarMenu">
 
         <!-- NAVEGACION -->
         <ul class="navbar-nav">
@@ -72,9 +72,9 @@
   </nav>
 
   <!-- FORMULARIO -->
-  <section class="form-section container-fluid container">
+  <section class="container-fluid container">
 
-    <h2>CONTACTANOS</h2>
+    <h2 class="app-title">CONTACTANOS</h2>
 
     <form action="" class="row">
 
@@ -110,37 +110,41 @@
     </form>
   </section>
 
-  <!-- SECCION CONTACTO BOTTOM -->
-  <section class="footer-contact">
+  <section class="fixed-bottom">
 
-    <div class="footer-contact__item phone-icon">
-      <i class="fa-solid fa-phone"></i>
-      <span>3546 875632</span>
-    </div>
+    <!-- SECCION CONTACTO BOTTOM -->
+    <section class="footer-contact">
 
-    <div class="footer-contact__item email-icon">
-      <i class="fa-solid fa-envelope"></i>
-      <span>info@supermercadoseme.com.ar</span>
-    </div>
+      <div class="footer-contact__item phone-icon">
+        <i class="fa-solid fa-phone"></i>
+        <span>3546 875632</span>
+      </div>
 
-    <div class="footer-contact__item location-icon">
-      <i class="fa-sharp fa-solid fa-location-dot"></i>
-      <span>Córdoba, Argentina</span>
-    </div>
-    
+      <div class="footer-contact__item email-icon">
+        <i class="fa-solid fa-envelope"></i>
+        <span>info@supermercadoseme.com.ar</span>
+      </div>
+
+      <div class="footer-contact__item location-icon">
+        <i class="fa-sharp fa-solid fa-location-dot"></i>
+        <span>Córdoba, Argentina</span>
+      </div>
+      
+    </section>
+
+    <!-- SECCION FOOTER -->
+    <footer class="footer">
+
+      <p>DESARROLLADO POR MAX MENVIELLE</p>
+      <p>
+        CONTENIDO EXTRA
+        <a href="./wireframes.html" target="_blank">Wireframes</a>
+        <a href="./mockups.html" target="_blank">Mockups</a>
+      </p>
+
+    </footer>
+
   </section>
-
-  <!-- SECCION FOOTER -->
-  <footer class="footer">
-
-    <p>DESARROLLADO POR MAX MENVIELLE</p>
-    <p>
-      CONTENIDO EXTRA
-      <a href="./wireframes.html" target="_blank">Wireframes</a>
-      <a href="./mockups.html" target="_blank">Mockups</a>
-    </p>
-
-  </footer>
 
 </body>
 </html>

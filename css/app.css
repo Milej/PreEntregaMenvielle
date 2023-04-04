@@ -117,14 +117,24 @@
   place-content: end;
 }
 
-.grid-container, .footer-contact, .card-container {
+.grid-container, .footer-contact, .wireframes, .mockups, .product-container, .card-container {
   display: grid;
+  place-content: space-between;
 }
 
 .card-container {
   grid-template-columns: repeat(4, 1fr);
   gap: 16px;
-  place-content: space-between;
+}
+
+.product-container {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.wireframes, .mockups {
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+  margin: 24px 0;
 }
 
 .footer-contact {
@@ -160,6 +170,7 @@
   color: white;
   display: block;
   margin: 24px 0;
+  transition: all 0.5s;
 }
 
 .app-button {
@@ -167,6 +178,21 @@
 }
 .app-button:hover {
   background-color: #227501;
+  transform: scale(1.2);
+}
+
+.btn-success {
+  background-color: #2f9f02 !important;
+  border: none !important;
+  padding: 12px 24px !important;
+}
+
+.app-title {
+  text-align: center;
+  border-bottom: 2px solid #444;
+  font-weight: bold;
+  font-size: 48px;
+  padding: 20px 0;
 }
 
 .card, .product-card {
@@ -175,6 +201,7 @@
   font-weight: bold;
   text-align: center;
   border: none !important;
+  transition: all 0.3s;
 }
 .card-head {
   text-align: center;
@@ -198,6 +225,9 @@
   height: 300px !important;
   width: 100%;
 }
+.card:hover, .product-card:hover {
+  transform: scale(1.03);
+}
 
 .product-card__name {
   font-size: 16px;
@@ -212,20 +242,8 @@
   width: 100%;
 }
 
-.form-section {
-  text-align: center;
-}
-
-.form-section h2, .list-section h2 {
-  padding: 32px;
+.app-label {
   font-weight: bold;
-  text-align: center;
-  font-size: 48px;
-}
-
-form {
-  display: inline-block;
-  max-width: 100%;
 }
 
 .app-input {
@@ -236,16 +254,6 @@ form {
 
 textarea {
   resize: none;
-}
-
-.app-label {
-  font-weight: bold;
-}
-
-.footer-container {
-  position: fixed;
-  width: 100%;
-  bottom: 0;
 }
 
 .main-section {
@@ -262,29 +270,10 @@ textarea {
   text-shadow: 3px 1px 1px #444;
 }
 
-.offers-section {
-  text-align: center;
-}
-.offers-section__title {
-  text-align: center;
-  border-bottom: 2px solid #444;
-  font-weight: bold;
-  font-size: 48px;
-  padding: 20px 0;
-}
-
-.main-content {
-  text-align: center;
-}
-.main-content__title {
-  text-align: center;
-  border-bottom: 2px solid #444;
-  font-weight: bold;
-  font-size: 48px;
-  padding: 20px 0;
-}
-
 @media screen and (max-width: 767px) {
+  .app-title {
+    font-size: 24px;
+  }
   .main-section {
     gap: 40px;
     height: 60vh;
@@ -309,16 +298,11 @@ textarea {
   .card-container {
     grid-template-columns: repeat(1, 1fr);
   }
-  .main-content {
-    text-align: center;
+  .product-container {
+    grid-template-columns: repeat(1, 1fr);
   }
-  .main-content__title {
-    text-align: center;
-    border-bottom: 2px solid #444;
-    font-weight: bold;
-    font-size: 48px;
-    padding: 20px 0;
-    font-size: 24px;
+  .fixed-bottom {
+    position: relative !important;
   }
 }
 @media screen and (min-width: 767px) and (max-width: 1023px) {
@@ -346,10 +330,21 @@ textarea {
   .card-container {
     grid-template-columns: repeat(2, 1fr);
   }
+  .product-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .fixed-bottom {
+    position: relative !important;
+  }
 }
 @media screen and (min-width: 1024px) {
-  .card-container {
+  .card-container, .product-container {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 1440px) {
+  .card-container, .product-container {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 

@@ -1,10 +1,22 @@
 .grid-container{
   display: grid;
+  place-content: space-between;
 }
 
 .card-container{
   @extend .grid-container;
   grid-template-columns: repeat(4, 1fr);
   gap: 16px;
-  place-content: space-between;
+}
+
+.product-container{
+  @extend .grid-container;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.wireframes, .mockups{
+  @extend .grid-container;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+  margin: 24px 0;
 }
